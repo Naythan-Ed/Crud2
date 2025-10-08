@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Gestión de Usuarios</h1>
+    
+    <a href="/obtenerUsuario">Obtener Usuarios</a>
+
+    <form action="/agregarUsuario" method="post">
+        <h3>Agregar Usuario</h3>
+        <input type="text" name="nombre" placeholder="Nombre de Usuario">
+        <input type="submit" value="Agregar Usuario">
+    </form>
+
+    <form action="/borrarUsuario" method="post">
+        <h3>Borrar Usuario</h3>
+        <input type="text" name="id" placeholder="Ingresa el nombre">
+        <input type="submit" value="Borrar Usuario">
+    </form>
+
+    <form action="/editarUsuario" method="post">
+        <h3>Editar Usuario</h3>
+        <input type="text" name="nombre" placeholder="Ingresa el nombre">
+        <input type="text" name="nuevonombre" placeholder="Ingresa el nuevo nombre">
+        <input type="submit" value="Editar Usuario">
+    </form>
+
+</body>
+</html>
